@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-padding-top: 2rem;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-family: 'Rubik', sans-serif;
+}
+
+body,
+html{
+  height: 100%;
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;	
+	justify-content: space-between;
+	padding: 15px 10%;
+	transition: 0.2s;
+  background: white;
+}
+
+.logo{
+  width: 130px;
+}
+
+.header_buttons{
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+a{
+  color: black;
+}
+
+.header_buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.header_buttons > div > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_buttons > div > a > img{
+  width: 30px;
+}
+
+.timer{
+  width: 100%;
+  height: 200px;
+  background: url(../Images/img.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 130px;
+  color: rgb(209, 198, 231);
+}
+
+.shop-box{
+  width: 100%;
+  margin-top: 70px;
+}
+
+.product{
+  width: 30%;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 5%;
+  margin: 16px 0px 0px 16px;
+}
+
+input{
+  padding-left: 10px;
+  width: 40%;
+  height: 37px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.products-section{
+  min-height: calc(100vh - 70px);
+  margin-left: 18%;
+  margin-right: 18%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.products-section img{
+  border-radius: 4%;
+  width: 100%;
+}
+
+.products-section span{
+  position: relative;
+  left: 20px;
+  font-size: 2rem;
+}
+
+footer{
+  height: 40px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+}
+
+@media (max-width: 1000px) {
+  header{
+    padding: 15px 2%;
+  }
+  .logo{
+    width: 80px;
+  }
+  input{
+    width: 20%;
+    height: 25px;
+  }
+  .header_buttons > div > a > img{
+    width: 20px;
+  }
+  .header_buttons > div > a > span{
+    font-size: 10px;
+  }
+  .timer{
+    font-size: 90px;
+  }
+  .products-section{
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .products-section img{
+    border-radius: 11%;
+  }
+  .products-section span{
+    font-size: 1rem;
+  }
+}
